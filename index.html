@@ -7,10 +7,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background-image: url('YosemiteTree.webp');
+      background-image: url('YosemiteTree.webp'); /* Ensure this file path is correct */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      height: 100vh; /* Ensure the body takes up full height */
     }
 
     @keyframes fadeInUp {
@@ -47,7 +48,7 @@
       color: #ff4d88;
       font-size: 1.5rem;
       animation: drift var(--duration) linear infinite;
-      top: 100%;
+      top: -10%; /* Ensure they start in the visible area */
       opacity: 0;
       pointer-events: none;
     }
