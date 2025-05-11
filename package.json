@@ -1,0 +1,24 @@
+{
+  "name": "mothers-day",
+  "version": "1.0.0",
+  "description": "For Mom :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lordbeatus/Mothers-Day.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Lordbeatus/Mothers-Day/issues"
+  },
+  "homepage": "https://github.com/Lordbeatus/Mothers-Day#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.6"
+  }
+}
