@@ -13,6 +13,10 @@
       background-repeat: no-repeat;
       height: 100vh; /* Ensure the body takes up full height */
     }
+    html, body {
+     overflow-x: hidden;
+    }
+
 
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
@@ -79,7 +83,7 @@
 <body class="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
 
   <!-- Floating Hearts -->
-  <div class="absolute inset-0 pointer-events-none">
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
     <div class="heart">♥</div>
     <div class="heart">♥</div>
     <div class="heart">♥</div>
