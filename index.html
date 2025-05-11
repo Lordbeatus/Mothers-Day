@@ -53,12 +53,27 @@
       pointer-events: none;
     }
 
-    /* Individual heart customization */
-    .heart:nth-child(1) { left: 10%; --x-move: -30vw; --duration: 18s; animation-delay: 0s; }
-    .heart:nth-child(2) { left: 30%; --x-move: 20vw;  --duration: 22s; animation-delay: 5s; }
-    .heart:nth-child(3) { left: 50%; --x-move: -10vw; --duration: 20s; animation-delay: 10s; }
-    .heart:nth-child(4) { left: 70%; --x-move: 25vw;  --duration: 24s; animation-delay: 15s; }
-    .heart:nth-child(5) { left: 90%; --x-move: -20vw; --duration: 19s; animation-delay: 20s; }
+    /* Generate unique paths for each heart */
+    .heart:nth-child(1) { left: 5%; --x-move: -25vw; --duration: 16s; }
+    .heart:nth-child(2) { left: 10%; --x-move: 20vw;  --duration: 18s; }
+    .heart:nth-child(3) { left: 15%; --x-move: -15vw; --duration: 14s; }
+    .heart:nth-child(4) { left: 20%; --x-move: 30vw;  --duration: 20s; }
+    .heart:nth-child(5) { left: 25%; --x-move: -35vw; --duration: 22s; }
+    .heart:nth-child(6) { left: 30%; --x-move: 25vw;  --duration: 19s; }
+    .heart:nth-child(7) { left: 35%; --x-move: -30vw; --duration: 16s; }
+    .heart:nth-child(8) { left: 40%; --x-move: 20vw;  --duration: 18s; }
+    .heart:nth-child(9) { left: 45%; --x-move: -15vw; --duration: 22s; }
+    .heart:nth-child(10) { left: 50%; --x-move: 35vw;  --duration: 17s; }
+    .heart:nth-child(11) { left: 55%; --x-move: -20vw; --duration: 18s; }
+    .heart:nth-child(12) { left: 60%; --x-move: 25vw;  --duration: 21s; }
+    .heart:nth-child(13) { left: 65%; --x-move: -10vw; --duration: 16s; }
+    .heart:nth-child(14) { left: 70%; --x-move: 20vw;  --duration: 19s; }
+    .heart:nth-child(15) { left: 75%; --x-move: -30vw; --duration: 22s; }
+    .heart:nth-child(16) { left: 80%; --x-move: 35vw;  --duration: 18s; }
+    .heart:nth-child(17) { left: 85%; --x-move: -15vw; --duration: 19s; }
+    .heart:nth-child(18) { left: 90%; --x-move: 25vw;  --duration: 17s; }
+    .heart:nth-child(19) { left: 95%; --x-move: -20vw; --duration: 21s; }
+    .heart:nth-child(20) { left: 100%; --x-move: 10vw;  --duration: 23s; }
   </style>
 </head>
 <body class="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
@@ -70,10 +85,26 @@
     <div class="heart">♥</div>
     <div class="heart">♥</div>
     <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <!-- Add more hearts here -->
   </div>
 
   <!-- Message Card -->
-  <div class="bg-white/10 backdrop-blur-lg shadow-xl rounded-2xl p-8 max-w-lg text-center fade-in-up z-10">
+  <div class="bg-white/10 shadow-xl rounded-2xl p-8 max-w-lg text-center fade-in-up z-10">
     <h1 class="text-4xl font-bold text-pink-600 mb-4 float">Happy Mother's Day! 💐</h1>
     <p class="text-sm text-gray-800 leading-relaxed mb-4">
         Dear Mom, <br>
