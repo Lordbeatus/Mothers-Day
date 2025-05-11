@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background-image: url('https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?auto=format&fit=crop&w=1470&q=80');
+      background-image: url('YosemiteTree.webp');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -24,8 +24,14 @@
     }
 
     @keyframes drift {
-      0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 1; }
-      100% { transform: translateY(-100vh) translateX(30px) rotate(360deg); opacity: 0; }
+      0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) translateX(var(--x-move)) rotate(360deg);
+        opacity: 0;
+      }
     }
 
     .fade-in-up {
@@ -40,18 +46,18 @@
       position: absolute;
       color: #ff4d88;
       font-size: 1.5rem;
-      animation: drift 10s linear infinite;
+      animation: drift var(--duration) linear infinite;
       top: 100%;
-      left: 50%;
       opacity: 0;
+      pointer-events: none;
     }
 
-    /* Randomize hearts */
-    .heart:nth-child(1) { left: 20%; animation-delay: 0s; }
-    .heart:nth-child(2) { left: 40%; animation-delay: 2s; }
-    .heart:nth-child(3) { left: 60%; animation-delay: 4s; }
-    .heart:nth-child(4) { left: 80%; animation-delay: 6s; }
-    .heart:nth-child(5) { left: 50%; animation-delay: 8s; }
+    /* Individual heart customization */
+    .heart:nth-child(1) { left: 10%; --x-move: -30vw; --duration: 18s; animation-delay: 0s; }
+    .heart:nth-child(2) { left: 30%; --x-move: 20vw;  --duration: 22s; animation-delay: 5s; }
+    .heart:nth-child(3) { left: 50%; --x-move: -10vw; --duration: 20s; animation-delay: 10s; }
+    .heart:nth-child(4) { left: 70%; --x-move: 25vw;  --duration: 24s; animation-delay: 15s; }
+    .heart:nth-child(5) { left: 90%; --x-move: -20vw; --duration: 19s; animation-delay: 20s; }
   </style>
 </head>
 <body class="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
@@ -69,8 +75,11 @@
   <div class="bg-white/80 backdrop-blur-lg shadow-xl rounded-2xl p-8 max-w-lg text-center fade-in-up z-10">
     <h1 class="text-4xl font-bold text-pink-600 mb-4 float">Happy Mother's Day! 💐</h1>
     <p class="text-lg text-gray-800 leading-relaxed mb-4">
-      Thank you for everything you do. You are loved more than words can say. 
-      May your day be filled with joy, peace, and the love you so generously give. Have a nice day and may God bless you more than you can think of. Praying for you always and hope you enjoy the next surprise we have for you.
+        Dear Mom, <br>
+        Thank you for everything you do. You are loved more than words can say. May your day be filled with joy, peace, and the love you so generously give. <br>
+        We are so grateful for your love and support and every day we cherish every moment with you even if it there may be some bathroom breaks along the way (IM TALKING ABOUT YOU JONATHAN (definitely)). Your strength and kindness inspire us every day. <br>
+        Have a nice day and may God bless you more than you can think of. Praying for you always and thanks for being the best mom in the world. <br>
+        We know we already said this but we couldn't help but say it again We love you so much! <br>
     </p>
     <p class="text-2xl text-pink-500 font-semibold fade-in-up">♥ Daniel & Jonathan ♥</p>
   </div>
